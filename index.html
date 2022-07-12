@@ -13,7 +13,9 @@
     />
     <title>Traverse Landing Page</title>
   </head>
-  <body class="bg-bkg text-white selection:bg-accent selection:text-bkg">
+  <body
+    class="bg-bkg text-base text-white selection:bg-accent selection:text-bkg"
+  >
     <div id="parallax">
       <nav
         class="grid place-items-center absolute w-full top-0 z-50 drop-shadow-text-sm"
@@ -116,7 +118,7 @@
           <div>
             <small
               class="tracking-widest text-accent uppercase drop-shadow-text-sm"
-              >WHAT DREAMS ARE MADE OF</small
+              >What dreams are made of</small
             >
             <h2
               id="headline"
@@ -130,6 +132,130 @@
             full of adventure. Calling all explorers and extremists to the trip
             of their dreams in the most exotic locations all around the globe.
           </p>
+        </section>
+        <section
+          aria-labelledby="slider"
+          class="container grid gap-4 text-center sm:text-left"
+        >
+          <div class="relative">
+            <div
+              class="hidden sm:block absolute w-8 bg-accent/10 -left-4 h-full"
+            ></div>
+            <div>
+              <small
+                class="tracking-widest text-accent uppercase drop-shadow-text-sm"
+                >Off the Beaten Path</small
+              >
+              <h2
+                id="slider"
+                class="text-3xl font-bold tracking-wide drop-shadow-text-md"
+              >
+                Places without people
+              </h2>
+            </div>
+            <div
+              class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center space-x-4 space-y-4"
+            >
+              <p class="text-muted max-w-2xl drop-shadow-text-sm">
+                We specialize in finding places no one else knows about. Here
+                are a few of our favorite spats for true adventurers.
+              </p>
+              <div class="flex space-x-4">
+                <button
+                  data-slideBtn
+                  id="prev"
+                  aria-label="show previous image"
+                  disabled
+                  class="grid place-items-center bg-accent hover:bg-accent/90 rounded-full p-2 text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-accent disabled:bg-accent/20 disabled:text-accent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    class="pointer-events-none"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></circle>
+                    <polyline
+                      points="121.9 161.9 88 128 121.9 94.1"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></polyline>
+                    <line
+                      x1="168"
+                      y1="128"
+                      x2="88"
+                      y2="128"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></line>
+                  </svg>
+                </button>
+                <button
+                  data-slideBtn
+                  id="next"
+                  aria-label="show next image"
+                  class="grid place-items-center bg-accent hover:bg-accent/90 rounded-full p-2 text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-accent disabled:bg-accent/20 disabled:text-accent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                    class="pointer-events-none"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle
+                      cx="128"
+                      cy="128"
+                      r="96"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-miterlimit="10"
+                      stroke-width="24"
+                    ></circle>
+                    <polyline
+                      points="134.1 161.9 168 128 134.1 94.1"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></polyline>
+                    <line
+                      x1="88"
+                      y1="128"
+                      x2="168"
+                      y2="128"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="24"
+                    ></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
