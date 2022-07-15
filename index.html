@@ -14,9 +14,11 @@
     <title>Traverse Landing Page</title>
   </head>
   <body
-    class="bg-bkg text-base text-white selection:bg-accent selection:text-bkg"
+    class="bg-bkg text-base text-white selection:bg-accent selection:text-bkg overflow-hidden"
   >
-    <div id="parallax">
+    <div
+      class="h-screen pb-12 sm:pb-0 overflow-y-auto overflow-x-hidden relative scroll-smooth perspective"
+    >
       <nav
         class="grid place-items-center absolute w-full top-0 z-50 drop-shadow-text-sm"
         aria-label="Primary Navigation"
@@ -41,13 +43,13 @@
         </a>
       </nav>
       <header
-        class="min-h-screen flex flex-col justify-evenly items-center relative"
+        class="min-h-screen flex flex-col justify-evenly items-center relative preserve-3d"
       >
         <div
           class="absolute bg-gradient-to-b inset-0 bottom-3/4 from-accent to-transparent"
         ></div>
         <div
-          class="absolute bg-gradient-to-t inset-0 top-1/3 -bottom-32 from-bkg/80 to-transparent"
+          class="absolute bg-gradient-to-t inset-0 top-1/3 -bottom-32 from-bkg/80 to-transparent distance-1"
         ></div>
         <img
           sizes="(min-width: 500px) 480w, 650w, 800w, 1300w"
@@ -57,12 +59,12 @@
             ./images/hero-md.jpg  800w,
             ./images/hero-lg.jpg 1300w
           "
-          class="absolute h-full w-full -z-20 object-cover object-center"
+          class="absolute h-full w-full -z-20 object-cover object-center distance-1"
           src="./images/hero.jpg"
           aria-hidden="true"
         />
         <h1
-          class="text-5xl text-center font-bold text-white tracking-wide py-12 drop-shadow-text-sm lg:drop-shadow-text-lg"
+          class="text-5xl text-center font-bold text-white tracking-wide py-12 drop-shadow-text-sm lg:drop-shadow-text-lg distance-2"
         >
           Unique Trips for<br />
           Adventurous <br />
@@ -70,7 +72,7 @@
         </h1>
         <a
           href="#contact-form"
-          class="bg-accent text-bkg font-medium py-3 px-8 rounded-full border border-bkg focus:outline-none focus-visible:ring-4 ring-accent ring-offset-bkg ring-offset-2 hover:bg-accent/90 flex items-center space-x-2 drop-shadow-text-lg hover:drop-shadow-none transition-shadow"
+          class="bg-accent text-bkg font-medium py-3 px-8 rounded-full border border-bkg focus:outline-none focus-visible:ring-4 ring-accent ring-offset-bkg ring-offset-2 hover:bg-accent/90 flex items-center space-x-2 drop-shadow-text-lg hover:drop-shadow-none transition-shadow distance-2"
         >
           <span class="uppercase tracking-wide">Book a Trip</span>
           <svg
